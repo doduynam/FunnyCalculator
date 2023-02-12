@@ -32,12 +32,12 @@ public class AddController {
 	 */
 	@PostMapping("/")
 	public ResponseDTO addTwoNumber(@RequestBody RequestDTO requestDTO) {
-		IAddService.Input input =
+		final IAddService.Input input =
 				new IAddService.Input(
 						requestDTO.getNumOne(),
 						requestDTO.getNumTwo());
 
-		IAddService.Output output = addService.execute(input);
+		final IAddService.Output output = addService.execute(input);
 
 		return new ResponseDTO(
 				output.getId(),
