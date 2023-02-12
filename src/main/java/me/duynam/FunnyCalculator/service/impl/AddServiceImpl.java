@@ -7,7 +7,9 @@ import me.duynam.FunnyCalculator.entity.AddEntity;
 import me.duynam.FunnyCalculator.repository.AddRepository;
 import me.duynam.FunnyCalculator.service.IAddService;
 import me.duynam.FunnyCalculator.util.AddUtil;
+import org.springframework.stereotype.Service;
 
+@Service
 @Transactional
 @RequiredArgsConstructor
 public class AddServiceImpl
