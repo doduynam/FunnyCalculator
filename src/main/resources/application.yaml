@@ -3,3 +3,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/funny_calculator
     username: postgres
     password: admin
+
+  liquibase:
+    change-log: db/changelog.xml
