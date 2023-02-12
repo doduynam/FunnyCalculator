@@ -26,6 +26,8 @@ public class AddController {
 	private final IAddService addService;
 
 	/**
+	 * Api: "/add/"
+	 * Get sum of two number
 	 *
 	 * @param requestDTO
 	 * @return
