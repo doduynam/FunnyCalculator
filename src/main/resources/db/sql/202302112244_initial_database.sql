@@ -5,36 +5,32 @@
 
 CREATE TABLE IF NOT EXISTS fc_add
 (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
     num_one VARCHAR NOT NULL,
     num_two VARCHAR NOT NULL,
-    resutl  VARCHAR NOT NULL,
-
-    primary key (num_one, num_two)
+    result  VARCHAR NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS fc_sub
 (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
     num_one VARCHAR NOT NULL,
     num_two VARCHAR NOT NULL,
-    resutl  VARCHAR NOT NULL,
-
-    primary key (num_one, num_two)
+    result  VARCHAR NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS fc_mul
 (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
     num_one VARCHAR NOT NULL,
     num_two VARCHAR NOT NULL,
-    resutl  VARCHAR NOT NULL,
-
-    primary key (num_one, num_two)
+    result  VARCHAR NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS fc_div
 (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
     num_one VARCHAR NOT NULL,
     num_two VARCHAR NOT NULL,
-    resutl  VARCHAR NOT NULL,
-
-    primary key (num_one, num_two)
+    result  VARCHAR NOT NULL
 );
