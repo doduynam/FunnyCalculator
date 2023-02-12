@@ -1,7 +1,14 @@
+buildscript {
+	dependencies {
+		classpath "org.liquibase:liquibase-gradle-plugin:2.0.4"
+	}
+}
+
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.2'
 	id 'io.spring.dependency-management' version '1.1.0'
+	id 'org.liquibase.gradle' version '2.0.4'
 }
 
 group = 'me.duynam'
@@ -18,12 +25,32 @@ repositories {
 	mavenCentral()
 }
 
+apply plugin: 'org.liquibase.gradle'
+
 dependencies {
+	liquibaseRuntime(
+			'org.liquibase:liquibase-core:4.19.0',
+			'org.postgresql:postgresql:42.5.3'
+	)
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.liquibase:liquibase-core'
+	implementation 'org.liquibase:liquibase-core:4.19.0'
+	implementation 'org.postgresql:postgresql:42.5.3'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+liquibase {
+	activities {
+		main {
+			changeLogFile 'src/main/resources/db/changelog.xml'
+			classpath 'src/main/resources/db'
+			url 'jdbc:postgresql://localhost:5432/funny_calculator'
+			username 'postgres'
+			password 'admin'
+		}
+	}
 }
 
 tasks.named('test') {
