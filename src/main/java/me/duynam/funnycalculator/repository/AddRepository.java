@@ -1,7 +1,7 @@
-package me.duynam.FunnyCalculator.repository;
+package me.duynam.funnycalculator.repository;
 
 import java.util.Optional;
-import me.duynam.FunnyCalculator.entity.AddEntity;
+import me.duynam.funnycalculator.entity.AddEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AddRepository

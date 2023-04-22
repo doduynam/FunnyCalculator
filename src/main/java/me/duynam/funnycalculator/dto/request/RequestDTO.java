@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.dto.request;
+package me.duynam.funnycalculator.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

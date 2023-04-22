@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.entity;
+package me.duynam.funnycalculator.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,10 +10,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "fc_add")
+@Table(name = "fc_sub")
 @Data
 @NoArgsConstructor
-public class AddEntity {
+public class SubEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

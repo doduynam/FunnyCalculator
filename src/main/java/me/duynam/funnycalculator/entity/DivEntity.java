@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.entity;
+package me.duynam.funnycalculator.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

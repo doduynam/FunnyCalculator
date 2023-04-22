@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.service;
+package me.duynam.funnycalculator.service;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

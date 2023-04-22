@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator;
+package me.duynam.funnycalculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

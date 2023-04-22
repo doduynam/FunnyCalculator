@@ -1,12 +1,12 @@
-package me.duynam.FunnyCalculator.service.impl;
+package me.duynam.funnycalculator.service.impl;
 
 import jakarta.transaction.Transactional;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
-import me.duynam.FunnyCalculator.entity.AddEntity;
-import me.duynam.FunnyCalculator.repository.AddRepository;
-import me.duynam.FunnyCalculator.service.IAddService;
-import me.duynam.FunnyCalculator.util.AddUtil;
+import me.duynam.funnycalculator.entity.AddEntity;
+import me.duynam.funnycalculator.repository.AddRepository;
+import me.duynam.funnycalculator.service.IAddService;
+import me.duynam.funnycalculator.util.AddUtil;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,7 +20,7 @@ public class AddServiceImpl
 
 	@Override
 	protected void preDoing(Input input) {
-		return;
+		// do nothing
 	}
 
 	@Override

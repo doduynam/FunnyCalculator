@@ -1,12 +1,12 @@
 /**
  * FunnyCalculator Project
  */
-package me.duynam.FunnyCalculator.controller;
+package me.duynam.funnycalculator.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.duynam.FunnyCalculator.dto.request.RequestDTO;
-import me.duynam.FunnyCalculator.dto.response.ResponseDTO;
-import me.duynam.FunnyCalculator.service.IAddService;
+import me.duynam.funnycalculator.dto.request.RequestDTO;
+import me.duynam.funnycalculator.dto.response.ResponseDTO;
+import me.duynam.funnycalculator.service.IAddService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,7 +32,7 @@ public class AddController {
 	 * @param requestDTO
 	 * @return
 	 */
-	@PostMapping("/")
+	@PostMapping()
 	public ResponseDTO addTwoNumber(@RequestBody RequestDTO requestDTO) {
 		final IAddService.Input input =
 				new IAddService.Input(

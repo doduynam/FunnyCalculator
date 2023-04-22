@@ -1,7 +1,7 @@
-package me.duynam.FunnyCalculator.service.impl;
+package me.duynam.funnycalculator.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import me.duynam.FunnyCalculator.service.IBaseService;
+import me.duynam.funnycalculator.service.IBaseService;
 import org.springframework.stereotype.Service;
 
 @Service

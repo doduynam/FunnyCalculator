@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.service;
+package me.duynam.funnycalculator.service;
 
 public interface IBaseService<I, O> {
 

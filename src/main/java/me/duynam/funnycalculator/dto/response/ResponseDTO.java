@@ -1,4 +1,4 @@
-package me.duynam.FunnyCalculator.dto.response;
+package me.duynam.funnycalculator.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
